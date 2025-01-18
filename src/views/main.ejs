@@ -54,9 +54,9 @@
             <tr>
               <td><%= content.id %></td>
               <td>
-                <%= content.contentType === 0 ? "Songs" : content.contentType
-                === 1 ? "NoteSkins" : content.contentType === 2 ? "SoundEffects"
-                : content.contentType === 3 ? "GlobalLua" : "Unknown" %>
+                <%= content.contentType === 0 ? "乐曲(Songs)" : content.contentType
+                === 1 ? "按键皮肤(NoteSkins)" : content.contentType === 2 ? "打击音效(SoundEffects)"
+                : content.contentType === 3 ? "全局脚本(GlobalLua)" : "Unknown" %>
               </td>
               <td><%= content.title %></td>
               <td><%= content.publisher %></td>
