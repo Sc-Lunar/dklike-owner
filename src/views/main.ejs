@@ -64,6 +64,7 @@
               <td><%= content.downloadCount %></td>
               <td><%= content.voteAverageScore %></td>
               <td class="difficulty">
+                <% if (content.contentType === 0)
                 <span class="diff" id="diff-easy">
                   <% if (content.songInfo.difficulties[0] === -1) { %>X<% } else
                   { %><%= content.songInfo.difficulties[0] %><% } %>
@@ -84,6 +85,7 @@
                   <% if (content.songInfo.difficulties[4] === -1) { %>X<% } else
                   { %><%= content.songInfo.difficulties[4] %><% } %>
                 </span>
+                %>
               </td>
               <td><%= content.songInfo.hasLua ? "Yes" : "No" %></td>
               <td>
