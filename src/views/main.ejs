@@ -64,28 +64,31 @@
               <td><%= content.downloadCount %></td>
               <td><%= content.voteAverageScore %></td>
               <td class="difficulty">
-                <% if (content.contentType === 0)
                 <span class="diff" id="diff-easy">
+                  <%= if (content.contentType === 0)
                   <% if (content.songInfo.difficulties[0] === -1) { %>X<% } else
-                  { %><%= content.songInfo.difficulties[0] %><% } %>
+                  { %><%= content.songInfo.difficulties[0] %><% } %>%>
                 </span>
                 <span class="diff" id="diff-normal">
+                  <%= if (content.contentType === 0)
                   <% if (content.songInfo.difficulties[1] === -1) { %>X<% } else
-                  { %><%= content.songInfo.difficulties[1] %><% } %>
+                  { %><%= content.songInfo.difficulties[1] %><% } %>%>
                 </span>
                 <span class="diff" id="diff-hard">
+                  <%= if (content.contentType === 0)
                   <% if (content.songInfo.difficulties[2] === -1) { %>X<% } else
-                  { %><%= content.songInfo.difficulties[2] %><% } %>
+                  { %><%= content.songInfo.difficulties[2] %><% } %>%>
                 </span>
                 <span class="diff" id="diff-extra">
+                  <%= if (content.contentType === 0)
                   <% if (content.songInfo.difficulties[3] === -1) { %>X<% } else
-                  { %><%= content.songInfo.difficulties[3] %><% } %>
+                  { %><%= content.songInfo.difficulties[3] %><% } %>%>
                 </span>
                 <span class="diff" id="diff-lunatic">
+                  <%= if (content.contentType === 0)
                   <% if (content.songInfo.difficulties[4] === -1) { %>X<% } else
-                  { %><%= content.songInfo.difficulties[4] %><% } %>
+                  { %><%= content.songInfo.difficulties[4] %><% } %>%>
                 </span>
-                %>
               </td>
               <td><%= content.songInfo.hasLua ? "Yes" : "No" %></td>
               <td>
