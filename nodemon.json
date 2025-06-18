@@ -1,4 +1,6 @@
 {
-    "watch": ["src"],
-    "ext": "js,cjs"
+  "watch": ["src"],
+  "ext": "cjs,js,ts,ejs",
+  "ignore": [],
+  "exec": "node ./src/app.cjs"
 }
